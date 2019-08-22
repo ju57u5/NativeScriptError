@@ -1,0 +1,12 @@
+{
+  "main": "main.js",
+  "android": {
+    "v8Flags": "--expose_gc"
+  },
+  "dependencies": {
+    "typeorm": "^0.2.18"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1"
+  }
+}
