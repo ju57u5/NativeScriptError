@@ -1,0 +1,74 @@
+***** Fatal JavaScript exception - application has been terminated. *****
+Native stack trace:
+1   0x10d4015ff NativeScript::reportFatalErrorBeforeShutdown(JSC::ExecState*, JSC::Exception*, bool)
+2   0x10d445675 -[TNSRuntime executeModule:referredBy:]
+3   0x10ce46213 main
+4   0x110bc8541 start
+JavaScript stack trace:
+1   get@file:///app/vendor.js:134271:115
+2   getRepository@file:///app/vendor.js:177193:109
+3   get@file:///app/vendor.js:177203:38
+4   @:5:55
+5   __extends@[native code]
+6   @file:///app/bundle.js:481:14
+7   ./models/test.ts@file:///app/bundle.js:490:2
+8   __webpack_require__@file:///app/runtime.js:751:34
+9   fn@file:///app/runtime.js:121:39
+10  ./models/Todo.ts@file:///app/bundle.js:438:82
+11  __webpack_require__@file:///app/runtime.js:751:34
+12  fn@file:///app/runtime.js:121:39
+13  ./app/db.service.ts@file:///app/bundle.js:186:89
+14  __webpack_require__@file:///app/runtime.js:751:34
+15  fn@file:///app/runtime.js:121:39
+16  ./app/app.component.ts@file:///app/bundle.js:95:88
+17  __webpack_require__@file:///app/runtime.js:751:34
+18  fn@file:///app/runtime.js:121:39
+19  ./app/app.module.ts@file:///app/bundle.js:129:91
+20  __webpack_require__@file:///app/runtime.js:751:34
+21  fn@file:///app/runtime.js:121:39
+22  @file:///app/bundle.js:366:92
+23  ./main.ts@file:///app/bundle.js:428:34
+24  __webpack_requ<…>
+JavaScript error:
+file:///app/vendor.js:134271:115: JS ERROR ConnectionNotFoundError: Connection "default" was not found.
+(CoreFoundation) *** Terminating app due to uncaught exception 'NativeScript encountered a fatal error: ConnectionNotFoundError: Connection "default" was not found.
+at
+1   get@file:///app/vendor.js:134271:115
+2   getRepository@file:///app/vendor.js:177193:109
+3   get@file:///app/vendor.js:177203:38
+4   @:5:55
+5   __extends@[native code]
+6   @file:///app/bundle.js:481:14
+7   ./models/test.ts@file:///app/bundle.js:490:2
+8   __webpack_require__@file:///app/runtime.js:751:34
+9   fn@file:///app/runtime.js:121:39
+10  ./models/Todo.ts@file:///app/bundle.js:438:82
+11  __webpack_require__@file:///app/runtime.js:751:34
+12  fn@file:///app/runtime.js:121:39
+13  ./app/db.service.ts@file:///app/bundle.js:186:89
+14  __webpack_require__@file:///app/runtime.js:751:34
+15  fn@file:///app/runtime.js:121:39
+16  ./app/app.component.ts@file:///app/bundle.js:95:88
+17  __webpack_require__@file:///app/runtime.js:751:34
+18  fn@file:///app/runtime.js:121:39
+19  ./app/app.module.ts@file:///app/bundle.js:129:91
+20  __webpack_require__@file:///a<…>
+NativeScript caught signal 6.
+Native Stack:
+1   0x10d4441df sig_handler(int)
+2   0x110f2cb5d _sigtramp
+3   0x10d376640
+4   0x110caf01d abort
+5   0x110a449d1 __cxa_bad_cast
+6   0x110a44b6f default_unexpected_handler()
+7   0x10f469e2d _objc_terminate()
+8   0x110a50a2e std::__terminate(void (*)())
+9   0x110a504eb __cxa_get_exception_ptr
+10  0x110a504b2 __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+11  0x10f469bfa _objc_exception_destructor(void*)
+12  0x10d401a38 NativeScript::reportFatalErrorBeforeShutdown(JSC::ExecState*, JSC::Exception*, bool)
+13  0x10d445675 -[TNSRuntime executeModule:referredBy:]
+14  0x10ce46213 main
+15  0x110bc8541 start
+JS Stack:
+
